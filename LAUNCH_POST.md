@@ -9,7 +9,7 @@ canonical_url: https://openclaw.net/blog/launch
 
 Today, we're excited to open-source **[OpenClaw.NET](https://github.com/user/openclaw.net)** — a production-hardened, self-hosted AI agent runtime built for .NET teams who want to ship, not experiment.
 
-Unlike the fragmented Python ecosystem or the heavy TypeScript runtimes, OpenClaw.NET is a single, self-contained binary (under 15 MB) that gives you a complete agent gateway with 14 tools, 10 LLM providers, and a full security stack.
+Unlike the fragmented Python ecosystem or the heavy TypeScript runtimes, OpenClaw.NET is a single, self-contained binary (under 15 MB) that gives you a complete agent gateway with 15 native tools, 10 LLM providers, and a full security stack.
 
 ## The Problem: "It works in my notebook"
 
@@ -29,10 +29,11 @@ Built on the cutting edge of **.NET 10** and **NativeAOT**, OpenClaw is designed
 
 *   **Self-Contained**: `<15 MB` Docker image (Alpine/Ubuntu Chiseled + NativeAOT).
 *   **Provider Agnostic**: Use OpenAI, Anthropic, Google, Ollama, or any local LLM via `Microsoft.Extensions.AI`.
-*   **14 Built-in Tools**: Shell, File I/O, Web Search, Git, Code Execution, PDF Reading, Memory, and more.
-*   **Multi-Agent**: The `delegate_agent` tool lets your main agent spawn sub-agents for specific tasks.
+*   **15 Built-in Tools**: Interactive Headless Browser (Playwright), Shell, File I/O, Web Search, Git, Code Execution, PDF Reading, Memory, and more.
+*   **Multi-Agent**: The `delegate_agent` tool lets your main agent spawn sub-agents for specific tasks and connect to them cross-session.
+*   **Channels & Background Jobs**: Natively hook into Telegram or Twilio, and configure robust repeating internal `Cron` processes.
 *   **Resilient**: Circuit breakers, exponential backoff, token budgets, and per-request timeouts.
-*   **Observable**: Structured logging, Prometheus metrics, and distributed tracing out of the box.
+*   **Observable**: Structured logging, Prometheus metrics, and native `OpenTelemetry` distributed tracing out of the box.
 
 ## Why .NET 10 & NativeAOT?
 
@@ -46,7 +47,7 @@ Here is what the startup looks like:
 
 ```text
 [14:02:23 INF] OpenClaw Gateway v1.0.0 starting...
-[14:02:23 INF] Loaded 14 tools (Shell, FileRead, FileWrite, Memory...)
+[14:02:23 INF] Loaded 15 tools (Browser, Shell, FileRead, FileWrite, Memory...)
 [14:02:23 INF] Connected to OpenAI (gpt-4o)
 [14:02:23 INF] Listening on ws://0.0.0.0:18789
 ```
