@@ -11,6 +11,8 @@ If you’ve used popular agent frameworks in other ecosystems (like LangChain or
 
 We’re not trying to be a drop-in port of another framework. This is OpenClaw’s opinionated take on what it looks like to ship an “agent product” on .NET.
 
+> *Disclaimer: OpenClaw.NET is not affiliated with, endorsed by, or associated with the original [OpenClaw](https://github.com/openclaw/openclaw) project. It is an independent .NET implementation inspired by their excellent work.*
+
 *Note: This post avoids claiming ownership of any domain. If you deploy OpenClaw publicly, you’ll use **your own** hostname (e.g. `openclaw.example.com`) behind your own TLS.*
 
 ## The Problem
