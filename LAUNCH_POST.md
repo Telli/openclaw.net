@@ -85,7 +85,7 @@ You can run OpenClaw in seconds using Docker:
 
 ```bash
 docker run -d -p 18789:18789 \
-  -e OPENCLAW_API_KEY="sk-..." \
+  -e MODEL_PROVIDER_KEY="sk-..." \
   ghcr.io/user/openclaw-gateway:latest
 ```
 
