@@ -99,9 +99,9 @@ ws://127.0.0.1:18789/ws
 
 OpenClaw is MIT licensed and built entirely in the open. 
 
-*   **GitHub Repository**: `<REPO_URL>`
-*   **Docs and Tutorials**: `<DOCS_URL>`
-*   **Community Discord**: `<DISCORD_URL>`
+*   **GitHub Repository**: `https://github.com/Telli/openclaw.net`
+*   **Docs and Tutorials**: `https://github.com/Telli/openclaw.net`
+*   **Community Discord**: `(Link pending)`
 
 If you're a .NET developer tired of porting Python libraries into your monolith, give OpenClaw a try. Let's build agents that are robust, compiled, and ready for production.
 
